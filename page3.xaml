@@ -1,0 +1,24 @@
+﻿<Window x:Class="InventoryManagementSystem.page3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventoryManagementSystem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="620" Width="1250">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FFB54B4B" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Button Content="ADD" Height="50" Width="170" Click="Button_Click" Margin="375,63,655,451"></Button>
+        <DataGrid Height="300" Width="500" Margin="150,74,150,10" x:Name="read" SelectionChanged="read_SelectionChanged"></DataGrid>
+        <TextBox x:Name="tx" HorizontalAlignment="Left" Margin="198,83,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Height="50"></TextBox>
+        <Button Content="remove" Height="50" Width="170" Click="Button1_Click" Margin="580,63,450,451"/>
+        <Button Content="update" Height="50" Width="170" Click="Button2_Click" Margin="776,63,254,451"/>
+        <Button Content="show orders"  HorizontalAlignment="Left" Height="54" Margin="92,499,0,0" VerticalAlignment="Top" Width="127" Click="Button_Click_1"/>
+    </Grid>
+</Window>

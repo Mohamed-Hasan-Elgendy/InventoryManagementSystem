@@ -1,0 +1,15 @@
+﻿<Window x:Class="InventoryManagementSystem.page2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventoryManagementSystem"
+        mc:Ignorable="d"
+        Title="page2" Height="450" Width="800">
+    <Grid>
+        <DataGrid Height="300" Width="500" Margin="150,74,150,10" x:Name="view" SelectionChanged="view_SelectionChanged_1"></DataGrid>
+        <Button x:Name="buy" Content="Button" HorizontalAlignment="Left" Height="31" Margin="488,41,0,0" VerticalAlignment="Top" Width="128" Click="buy_Click"/>
+        <Button x:Name="end" Content="Button" HorizontalAlignment="Left" Height="31" Margin="178,41,0,0" VerticalAlignment="Top" Width="128" Click="end_Click"/>
+
+    </Grid>
+</Window>
